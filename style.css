@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --light-gray: hsl(0, 0%, 95%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 975px;
+  padding: 3rem 0;
+}
+
+.btn {
+
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: var(--light-gray);
+  border-radius: 100px;
+  padding: 11px 15px;
+  display: inline-block;
+  border: 3px solid transparent;
+  margin-top: 3.78rem;
+  align-self: flex-start;
+  text-decoration: none;
+  color: var(--light-gray);
+  border: 3px solid var(--light-gray);
+}
+img {
+  width: 62px;
+}
+
+
+.btn--orange {
+  color: var(--orange);
+}
+
+.btn--orange:hover {
+  background-color: var(--orange);
+}
+
+.btn--dark-cyan {
+  color: var(--dark-cyan);
+}
+
+.btn--dark-cyan:hover {
+  background-color: var(--dark-cyan);
+}
+
+.btn--cyan {
+  color: var(--cyan);
+}
+
+.btn--cyan:hover{
+  background-color: var(--cyan);
+}
+
+.card {
+  padding: 3rem;
+}
+
+.title {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 2.23rem;
+  color: var(--light-gray);
+  margin-top: 1rem;
+}
+
+.text {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: 1.5em;
+}
+
+.orange {
+  background-color: var(--orange);
+}
+.cyan {
+  background-color: var(--cyan);
+}
+.dark-cyan {
+  background-color: var(--dark-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 85%;
+    grid-template-columns: none;
+  }
+
+  .btn {
+    margin-top: 1.356rem;
+  }
+}
